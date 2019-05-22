@@ -60,6 +60,12 @@ function c( el ) {
 	// a short version for addEventListener
 	el.o = ( ev, fn ) => el.addEventListener( ev, e => fn( e, el ) );
 
+	// ab insert html afterbegin
+	const ab = ht => el.insertAdjacentHTML( 'afterbegin', ht );
+
+	// be insert html beforeend
+	const be = ht => el.insertAdjacentHTML( 'beforeend', ht );
+
 	// short for classList
 	el.c = el.classList;
 
