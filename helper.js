@@ -87,5 +87,7 @@ function ca( li ) {
 
 	// addEventListener for every element
 	li.o = ( ev, fn ) => li.forEach( el => el.addEventListener( ev, e => fn( e, el ) ) );
+	
+	return li;
 
 }
